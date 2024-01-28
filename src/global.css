@@ -11,6 +11,10 @@ body {
   border-width: 0;
 }
 
+.mobile-menu {
+  background-image: url("/public/frame.svg");
+}
+
 .hero-container {
   background-image: url("/public/frame.svg");
   background-repeat: no-repeat; /* Prevent image from repeating */
