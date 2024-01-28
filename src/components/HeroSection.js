@@ -47,7 +47,7 @@ const HeroSectionContainer = () => {
                 <p className="m-0">exciting startup jobs</p>
               </h1>
               <div className="self-stretch relative text-center md:text-start  text-base tracking-[-0.02em] leading-[150%] text-white">
-                JobVista is your gateway to discovering a world of
+                OutReacher is your gateway to discovering a world of
                 opportunities. With tailored job listings, expert insights, and
                 unwavering support, we empower you to find the job you desire.
                 Your journey to success starts here. Find it. You can.

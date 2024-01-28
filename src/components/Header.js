@@ -10,7 +10,7 @@ const Header = () => {
           <img className="w-7 h-7 lg:w-10 lg:h-10" alt="" src="/logo.svg" />
           {/* Adjusted text size to be smaller */}
           <h3 className="text-base lg:text-2xl leading-6 font-normal">
-            JobVista
+            OutReacher
           </h3>
         </div>
         {/* Hamburger Button */}
