@@ -30,25 +30,25 @@ const Header = () => {
         >
           <a
             href="#"
-            className="text-white hover:text-sandybrown-200 no-underline"
+            className="text-white hover:text-sandybrown-200 no-underline scroll-smooth"
           >
             Home
           </a>
           <a
             href="#about"
-            className="text-white hover:text-sandybrown-200 no-underline"
+            className="text-white hover:text-sandybrown-200 no-underline scroll-smooth"
           >
             About
           </a>
           <a
-            href="#pricing"
-            className="text-white hover:text-sandybrown-200 no-underline"
+            href="#features"
+            className="text-white hover:text-sandybrown-200 no-underline scroll-smooth"
           >
-            Pricing
+            Services
           </a>
           <a
             href="#support"
-            className="text-white hover:text-sandybrown-200 no-underline"
+            className="text-white hover:text-sandybrown-200 no-underline scroll-smooth"
           >
             Support
           </a>
@@ -58,30 +58,30 @@ const Header = () => {
       {isMenuOpen && (
         <div
           className={`mobile-menu lg:hidden
-            abosolut top-20 w-full flex flex-col items-center overflow-visible z-50 py-2
+            abosolut top-20 w-full flex flex-col items-center overflow-visible z-50 py-2 
           `}
         >
           <a
             href="#"
-            className="block no-underline text-slate-400 py-2 px-4 text-md font-medium font-inter hover:text-white"
+            className="block no-underline text-white py-2 px-4 text-md  scroll-smooth font-medium font-inter hover:text-sandybrown-200"
           >
             Home
           </a>
           <a
-            href="#"
-            className="block py-2 px-4 text-md font-medium font-inter  no-underline text-slate-400 hover:text-white"
+            href="#about"
+            className="block py-2 px-4 text-md font-medium font-inter scroll-smooth no-underline text-white hover:text-sandybrown-200"
           >
             About
           </a>
           <a
-            href="#"
-            className="block py-2 px-4 text-md font-medium font-inter  no-underline text-slate-400 hover:text-white"
+            href="#features"
+            className="block py-2 px-4 text-md font-medium font-inter  scroll-smooth no-underline text-white hover:text-sandybrown-200"
           >
-            Pricing
+            Services
           </a>
           <a
-            href="#"
-            className="block py-2 px-4 text-md font-medium font-inter  no-underline text-slate-400 hover:text-white"
+            href="#support"
+            className="block py-2 px-4 text-md font-medium font-inter scroll-smooth no-underline text-white hover:text-sandybrown-200"
           >
             Support
           </a>

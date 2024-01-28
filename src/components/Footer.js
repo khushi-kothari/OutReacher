@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer
       className="bg-whitesmoke w-full flex flex-col items-center justify-center py-12 px-0 box-border gap-[77px] text-left text-xl text-white font-inter"
-      id="footer"
+      id="support"
     >
       <div className="self-stretch flex flex-col md:flex-row items-center justify-center gap-20 px-10">
         <div className="flex-2 lg:flex-1 flex items-center justify-center relative rounded-md bg-gray-100 h-[234px]">
