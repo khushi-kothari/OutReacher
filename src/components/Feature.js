@@ -3,6 +3,8 @@ import { useMemo, useEffect } from "react";
 const Feature = ({
   frame1743,
   readyToUseCompone,
+  desc1,
+  desc2,
   frame1747,
   hightQualityUIYou,
   propColor,
@@ -43,10 +45,10 @@ const Feature = ({
     };
   }, []);
   return (
-    <div className="self-stretch flex flex-row items-start justify-start gap-[48px] text-left text-lg text-gray-100 font-inter">
-      <div className="flex-1 flex flex-row items-start justify-start gap-[32px]">
+    <div className="self-stretch flex flex-col lg:flex-row items-start justify-start gap-[48px] text-left text-lg text-gray-100 font-inter">
+      <div className="flex-1 flex flex-col text-center lg:text-start lg:flex-row items-start justify-start gap-[32px]">
         <img
-          className="relative w-20 h-[77px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0]"
+          className="relative w-14 h-14 mx-auto lg:mx-0 lg:w-20 lg:h-20 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0]"
           alt=""
           src={frame1743}
           data-animate-on-scroll
@@ -56,15 +58,13 @@ const Feature = ({
             {readyToUseCompone}
           </b>
           <p className="m-0 self-stretch relative text-base leading-[150%] text-dimgray">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-            ratione.
+            {desc1}
           </p>
         </div>
       </div>
-      <div className="flex-1 flex flex-row items-start justify-start gap-[32px]">
+      <div className="flex-1 flex flex-col text-center lg:text-start lg:flex-row items-start justify-start gap-[32px]">
         <img
-          className="relative w-20 h-[77px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0]"
+          className="relative w-14 h-14 mx-auto lg:mx-0 lg:w-20 lg:h-20 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_slide-in-bottom] opacity-[0]"
           alt=""
           src={frame1747}
           data-animate-on-scroll
@@ -77,9 +77,7 @@ const Feature = ({
             {hightQualityUIYou}
           </b>
           <p className="m-0 self-stretch relative text-base leading-[150%] text-dimgray">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-            ratione.
+            {desc2}
           </p>
         </div>
       </div>

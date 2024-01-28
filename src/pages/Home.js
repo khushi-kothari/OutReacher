@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="relative bg-whitesmoke w-full h-[2703px] overflow-hidden flex flex-col items-center justify-start">
+    <div className="relative bg-whitesmoke w-full overflow-hidden flex flex-col items-center justify-start">
       <Header />
       <HeroSection />
       <AboutUs />

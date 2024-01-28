@@ -1,34 +1,70 @@
+import { useState, useEffect } from "react";
+
 const Footer = () => {
+  const [mail, setMail] = useState();
+
+  const handleChange = (e) => {
+    setMail(e.target.value);
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "ENTER") {
+      e.preventDefault();
+      this.setMail("");
+    }
+  };
+
+  useEffect(() => {
+    console.log(mail);
+  }, [mail]);
+
   return (
     <footer
-      className="bg-whitesmoke w-[1440px] h-[431px] flex flex-col items-center justify-center py-12 px-0 box-border gap-[77px] text-left text-xl text-white font-inter"
+      className="bg-whitesmoke w-full flex flex-col items-center justify-center py-12 px-0 box-border gap-[77px] text-left text-xl text-white font-inter"
       id="footer"
     >
-      <div className="self-stretch h-[185px] flex flex-row items-center justify-start gap-[32px]">
-        <div className="flex-1 relative rounded-md bg-gray-100 h-[234px]">
+      <div className="self-stretch flex flex-col md:flex-row items-center justify-center gap-20 px-10">
+        <div className="flex-2 lg:flex-1 flex items-center justify-center relative rounded-md bg-gray-100 h-[234px]">
           <img
-            className="absolute top-[-104.4px] left-[0px] w-[862.9px] h-[446.4px]"
+            className="absolute top-[-104.4px] right-[0px] rotate-180 w-[790px] h-[446.4px] z-0"
             alt=""
             src="/group-2.svg"
           />
-          <div className="absolute top-[80px] left-[70px] leading-[150%] font-semibold inline-block w-[564px]">
-            Sign Up to Receive Product Updates and More
-          </div>
-          <div className="absolute top-[125px] left-[70px] flex flex-col items-start justify-start gap-[13px] text-base">
-            <div className="w-[564px] flex flex-row items-start justify-start gap-[16px]">
-              <div className="flex-1 relative tracking-[-0.21px] leading-[16px]">
-                youremail@gmail.com
-              </div>
-              <img
-                className="relative w-4 h-4 overflow-hidden shrink-0"
-                alt=""
-                src="/right-arrow-icon.svg"
-              />
+          <img
+            className="absolute top-[-104.4px] left-[0px] w-[820px] h-[446.4px] z-0"
+            alt=""
+            src="/group-2.svg"
+          />
+          <div className="flex flex-col items-center justify-center z-10 px-8">
+            <div className="leading-[150%] font-semibold inline-block">
+              Sign Up to Receive Product Updates and More
             </div>
-            <img className="relative w-[564px] h-px" alt="" src="/line.svg" />
+            <div className="flex flex-col items-start justify-start gap-[13px] text-base pt-2">
+              <form onSubmit={(e) => e.preventDefault()}>
+                <input
+                  type="email"
+                  placeholder="youremail@gmail.com"
+                  value={mail}
+                  className="bg-transparent border-b-2 p-2 focus:outline-none text-slate-200 placeholder-gray-400"
+                  onChange={handleChange}
+                  onKeyDown={handleKeyDown}
+                />
+                <button
+                  type="submit"
+                  className="bg-transparent"
+                  onClick={() => setMail("")}
+                >
+                  <img
+                    className="relative w-4 h-4 overflow-hidden shrink-0"
+                    alt=""
+                    src="/right-arrow-icon.svg"
+                  />
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div className="flex-1 flex flex-row items-center justify-start py-0 pr-0 pl-[77px] gap-[32px] text-lg text-gray-100">
+        <div className="flex-1 flex flex-row md:flex-col lg:flex-row items-center justify-start py-0 pr-0 gap-[32px] text-lg text-gray-100">
           <div className="flex-1 flex flex-col items-start justify-start gap-[16px]">
             <div className="self-stretch relative leading-[18px] font-semibold">
               Office
@@ -53,16 +89,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-row items-center justify-between py-0 pr-[111px] pl-[66px] text-base text-gray-100">
+      <div className="self-stretch flex flex-row items-center justify-between py-0 px-10 md:px-20 text-base text-gray-100">
         <div className="relative tracking-[-0.21px]">
-          2020. All Rights Reserved
+          2024. All Rights Reserved
         </div>
-        <div className="w-[367px] flex flex-row items-center justify-between">
+        {/* <div className="w-[367px] flex flex-row items-center justify-between">
           <div className="relative leading-[16px]">About Us</div>
           <div className="relative leading-[16px]">Our Work</div>
           <div className="relative leading-[16px]">Products</div>
           <div className="relative leading-[16px]">Contact</div>
-        </div>
+        </div> */}
         <div className="flex flex-row items-start justify-start gap-[24px]">
           <img
             className="relative w-6 h-6 overflow-hidden shrink-0"

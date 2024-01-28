@@ -16,8 +16,31 @@ body {
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-size: cover; /* Resize image to cover the entire element */
   background-position: center center; /* Center the image horizontally and vertically */
+}
 
-  backgroundimage: 'url("/frame.svg")';
+#about {
+  background-image: url("/public/mask-group@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about-text {
+  background-image: url("/public/group-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* .text-container {
+  background-color: black;
+} */
+
+@media screen and (min-width: 1024px) {
+  #about {
+    background-image: none;
+  }
 }
 
 @keyframes slide-in-bottom {

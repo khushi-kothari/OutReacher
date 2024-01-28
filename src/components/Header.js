@@ -5,8 +5,8 @@ const Header = () => {
 
   return (
     <header className="bg-gray-200 flex items-center justify-between text-sandybrown-100 w-full py-3 px-6 font-inter">
-      <div className="flex items-center gap-4 pl-12">
-        <img className="w-10 h-10" alt="" src="/logo.svg" />
+      <div className="flex items-center gap-4 pl-6 md:pl-12">
+        <img className="w-7 h-7 lg:w-10 lg:h-10" alt="" src="/logo.svg" />
         {/* Adjusted text size to be smaller */}
         <h3 className="text-base lg:text-2xl leading-6 font-normal">
           JobVista
@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       {/* Hamburger Button */}
       <button
-        className="md:hidden h-10 w-10 flex items-center justify-center px-12 cursor-pointer bg-transparent"
+        className="lg:hidden h-10 w-10 flex items-center justify-center px-9 md:px-12 cursor-pointer bg-transparent"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         <img
@@ -25,7 +25,7 @@ const Header = () => {
       </button>
       {/* Navigation Links */}
       <div
-        className={`md:flex flex-col pr-12 md:flex-row items-center justify-end gap-4 md:gap-9 absolute md:static bg-gray-200 w-full md:w-auto left-0 top-[100%] transition-transform md:translate-y-0 no-underline`}
+        className={`hidden lg:flex flex-col pr-12 lg:flex-row items-center justify-end gap-4 md:gap-9 md:static bg-gray-200 w-full md:w-auto transition-transform md:translate-y-0 no-underline`}
       >
         <a
           href="#"
@@ -38,12 +38,6 @@ const Header = () => {
           className="text-white hover:text-sandybrown-200 no-underline"
         >
           About
-        </a>
-        <a
-          href="#contact"
-          className="text-white hover:text-sandybrown-200 no-underline"
-        >
-          Contact
         </a>
         <a
           href="#pricing"
